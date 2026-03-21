@@ -48,7 +48,7 @@
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1.19in}
 \addtolength{\topmargin}{-0.3in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textheight}{1.2in}
 \usepackage[margin=0.417in, left=0.5in]{geometry}
 
 \urlstyle{same}
@@ -60,7 +60,7 @@
 % Sections formatting
 \titleformat{\section}{
   \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+}{}{0em}{}[\color{black}\titlerule \vspace{-10pt}]
 
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -69,9 +69,7 @@
 %-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{#1}
 }
 
 \newcommand{\classesList}[4]{
@@ -109,7 +107,7 @@
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*, itemsep=1pt]}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 %-------------------------------------------
@@ -126,10 +124,10 @@
 
 
 \begin{center}
-    \vspace{-70pt}
+    \vspace{-60pt}
     {\Large \scshape \raggedright \textbf{Ritvik Sharma}} \\ 
-    \vspace{1pt}
-    New York, NY \\ \vspace{1pt}
+    
+    New York, NY \\ 
     \small {+1(646)995-9099} ~ 
     \href{mailto:rs4747@columbia.edu}{\color{blue} \raisebox{-0.2\height}\ \underline{rs4747@columbia.edu}} ~ 
     \href{www.ritvik-sharma.com}{\color{blue} \raisebox{-0.2\height}\ 
@@ -138,7 +136,7 @@
     \href{https://github.com/ritviksharma4}{\color{blue} \raisebox{-0.2\height}\ \underline{GitHub}} ~
     % \href{https://leetcode.com/u/ritviksharma4/}{\color{blue} \raisebox{-0.2\height}\ 
     % \underline{LeetCode}} ~
-    \vspace{-16pt}
+    \vspace{-12pt}
 \end{center}
 
 
@@ -156,56 +154,61 @@
       % {Bachelor of Technology in Computer Science with Specialization in AI-ML}{CGPA: 9.86/10}
       {BTech in Computer Science - AI \& ML Track}{GPA: 9.86/10}
   \resumeSubHeadingListEnd
-  \vspace{-13pt}
+  \vspace{-20pt}
 
 %-----------EXPERIENCE-----------
+\vspace{10pt}
 \section{Work Experience}
+\vspace{1pt}
   \resumeSubHeadingListStart
+    \resumeSubheading
+      {Columbia University}{\textnormal{Oct 2025 - Present}}
+      {\textbf{Graduate Research Assistant}}{New York, USA}
+      \resumeItemListStart
+        \vspace{-3pt}        
+
+        \resumeItem{\textbf{PeopleScope:} Built a real-time social awareness system using a Meta headset and computer vision (face recognition, emotion, activity and appearance detection) to help BLV users navigate social environments; designed a distributed GPU inference pipeline processing headset camera streams across \textbf{3 servers with $<$100 ms latency}.}
+
+        \resumeItem{\textbf{VisibleLandmarks:} Developed landmark-based navigation using Street View imagery and depth estimation to detect permanent objects (fire hydrants, crosswalks) and estimate precise geocoordinates, enabling BLV users to orient using tactile landmarks and \textbf{memorize routes for independent navigation}.}
+
+    \resumeItemListEnd
+    \vspace{-5pt}
     \resumeSubheading
       {Barclays, UK}{\textnormal{Jul 2023 - Jul 2025}}
       {\textbf{Software Engineer}}{Pune, India}
       \resumeItemListStart
         \vspace{-3pt}
         \resumeItem{\textbf{Saved \$200K/year} by engineering AWS Lambda optimization utilities and \textbf{driving adoption}  across Dev/DevOps.}
-        \vspace{1pt}
-        \resumeItem{Achieved \textbf{96\% faster performance (12 hrs → 27 mins)} for \textbf{5M+ record} ETL pipelines by redesigning Glue → DynamoDB workflows using Spark, Dynamic Frames, Batch Write; \textbf{Coordinated} with platform teams for seamless deployment.}
-        \vspace{1pt}
+        
+        \resumeItem{Achieved \textbf{96\% faster performance (12 hrs to 27 mins)} for \textbf{5M+ record} ETL pipelines by redesigning Glue to DynamoDB workflows using Spark, Dynamic Frames, Batch Write; \textbf{Coordinated} with platform teams for seamless deployment.}
+        
         \resumeItem{\textbf{Reduced error-resolution times by 75\%} by designing and developing a complex error-routing utility via Python-based Lambdas, IBM Netcool, and SNS filters. Played a \textbf{key role in facilitating communication} between development and operations teams to align on system-wide logging and monitoring strategies.}
-        \vspace{1pt}
-        \resumeItem{\textbf{Executed No-Downtime Deployments}: Integrated Blue-Green-Canary strategies into the system, \textbf{advised leadership, aligned cross-domain teams}, and ensured uninterrupted user experience.}
-        \vspace{1pt}
-        \resumeItem{Improved CI/CD pipeline \textbf{success rates by 63\%} by streamlining workflows, enhancing Dev $\leftrightarrow$ DevOps collaboration.}
-        \vspace{1pt}
+        
         \resumeItem{\textbf{Spearheaded the engineering and development} of the integration layer connecting Onboarding, Rewards, Payments, and other modules for Barclays’ first cloud-based credit card platform, \textbf{ArrowCard} targeting \textbf{30M+ UK customers.}}
     \resumeItemListEnd
-      \vspace{-15pt}
+      \vspace{-20pt}
 
 %-----------PROJECTS-----------
 \section{Projects}
-    \linespread{1}
-    \vspace{-16pt}
+    \vspace{-12pt}
       \resumeProjectHeading
           {\href{https://velvet.ritvik-sharma.com/}{\textbf{\underline{VELVÉT - Luxury E-Commerce Website}} \textnormal{\footnotesize\textit{ | AWS (SageMaker, OpenSearch), React, JavaScript, Python, NLP}} }\emph}{\href{https://velvet.ritvik-sharma.com/}{\underline{Link to Live Demo}}}
           \resumeItemListStart
-          \vspace{1pt}
-            \resumeItem{Created full-scale real-world functionality, including \textbf{ML-based semantic product search, wishlist management, cart operations, dummy order placement, and similar product recommendations} for a seamless user experience.}
-            \vspace{1pt}
+          
+            \resumeItem{Built a full-stack luxury e-commerce platform featuring \textbf{ML-powered semantic product search} using AWS SageMaker NER models and OpenSearch, enabling natural language product discovery across catalog data.}
+            \resumeItem{Developed scalable backend APIs and React frontend supporting cart operations, recommendations, and product similarity pipelines.}
+            
             % \vspace{-4pt}
-            \resumeItem{Implemented a secure and high quality AWS backend via IAM Roles, Basic DDoS Prevention and performed \textbf{Selenium-based unit + integration tests} to ensure Production-Grade Quality.}
-            \vspace{1pt}
+            
           \resumeItemListEnd
           \vspace{-20pt}
       \resumeProjectHeading
           {\href{https://github.com/ritviksharma4/My-Certificates/blob/main/My\%20Certificates/Columbia-University/Columbia_x_Amazon_Hackathon_Winner_Nov_2025.jpeg}{\textbf{\underline{Columbia x Amazon Hackathon Winner: MyCFO.ai \textnormal{\footnotesize\textit{ | AWS (Bedrock, Api-Gateway), TypeScript}}}} } \emph}{\href{https://mycfo-ai.ritvik-sharma.com/}{ \underline{Link to Web/Video Demo}}}
           \resumeItemListStart
-          \vspace{1pt}
-            \resumeItem{\textbf{Engineered a multi-agent CFO system} on Amazon Bedrock with a Supervisor Agent coordinating specialized financial agents, and \textbf{developed an interactive frontend} that transforms their structured outputs into real-time dashboards.}
-            \vspace{1pt}
+          
+            \resumeItem{Built a \textbf{multi-agent financial analysis system} on Amazon Bedrock where a supervisor agent orchestrates specialized agents for forecasting, expense analysis, and investment insights; developed a TypeScript frontend that converts agent outputs into real-time dashboards.}
+            
             % \vspace{-3pt}
-            \resumeItem{\textbf{Architected a serverless pipeline} with API Gateway → Lambda → Bedrock Agents, enabling spam-filtered requests, scalable orchestration, and structured JSON outputs for lightweight frontend rendering.}
-            \vspace{1pt}
-            % \vspace{-3pt}
-            \resumeItem{\textbf{Collaborated \& Led a team of 4} in a 12-hour hackathon by strategically allocating tasks based on \textbf{analyzing individual strengths}, demonstrating exceptional \textbf{teamwork and impactful communication.}}
     
           \resumeItemListEnd
           \vspace{-20pt}
@@ -216,35 +219,33 @@
       %       \vspace{-3pt}
       %       \resumeItem{Designed and Implemented the backend of the Mobile app where I worked on Face Detection and Recognition along with MySQL DB and NodeJS Backend.}
       %     \resumeItemListEnd
-      %     \vspace{-20pt}
+      %     \vspace{-12pt}
     \resumeSubHeadingListEnd
-\vspace{2.1pt}
+\vspace{-8pt}
 
 %-----------PROGRAMMING SKILLS-----------
+\vspace{10pt}
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.0in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, JavaScript, Java, C/C++, SQL (Postgres, MySQL), NoSQL, HTML/CSS} \\
-     \vspace{1pt}
-     \textbf{Frameworks}{: React, TypeScript, Angular, Node.js, Flask, JUnit, JQuery, FastAPI, Tomcat, Django, Selenium, Flutter} \\
-     \vspace{1pt}
-     \textbf{Developer Tools}{: Git, GitHub, Jenkins, Docker, Amazon Web Services (AWS), GitLab, Linux, Kubernetes } \\
-     \vspace{1pt}
-     \textbf{Technologies}{: PyTorch, NLP, Pandas, NumPy, Scikit-Learn, Machine Learning, Computer Vision, OpenCV, matplotlib, LLM}\\
+     \textbf{Languages}{: Python, Java, JavaScript, C/C++, SQL} \\
+     \textbf{Frameworks}{: React, TypeScript, Node.js, FastAPI, Flask, Django} \\
+     \textbf{Cloud \& DevOps}{: AWS (Lambda, SageMaker, OpenSearch), Google GCP, Docker, Kubernetes, Jenkins, Linux} \\
+     \textbf{AI / ML}{: PyTorch, NLP, Computer Vision, Scikit-Learn, Pandas, NumPy, OpenCV}\\
     }}
  \end{itemize}
- \vspace{-20pt}
+ \vspace{-12pt}
 
 %-----------EXTRACURRICULAR INVOLVEMENTS-----------
-\section{Extracurriculars}
-    \vspace{-3pt}
+\vspace{-5pt}
+\section{Achievements \& Publications}
           \resumeItemListStart
-          \vspace{1pt}
-            \resumeItem{Sharma, Ritvik (April 2025). \href{https://link.springer.com/chapter/10.1007/978-3-031-88237-1_4}{\underline{"VectorQuest:  Faster and Better Open-Domain Question-Answering System"}} \href{https://link.springer.com/chapter/10.1007/978-3-031-88237-1_4}{\textbf{\underline{Published in Springer Nature Switzerland AG}}}} for the innovation leading to \textbf{50 times Faster Prediction}.
-            % \vspace{-4pt}
+          
+            \resumeItem{\textbf{2 Research Publications}: (1) \textbf{ACM CHI} paper on \textbf{PeopleScope}, a real-time social awareness system for BLV users using computer vision and AR headsets; (2) \textbf{Springer Nature} NLP paper proposing a retrieval optimization achieving \textbf{50× faster inference}.}
+            \vspace{-4pt}
             \resumeItem{\textbf{2× Hackathon Winner} in university-level and industry-sponsored competitions, recognized for building innovative, production-grade AI and full-stack solutions under tight deadlines.}
-            % \vspace{-4pt}
-            \resumeItem{\textbf{Providing one-on-one tutoring} to Student Athletes at Columbia in quantitative and computational subjects, including \textbf{Probability, Machine Learning, Calculus, and Data Structures \& Algorithms}.}
+            \vspace{-4pt}
+            \resumeItem{Provide one-on-one tutoring to Columbia student-athletes in Probability, Machine Learning, Calculus, and Data Structures \& Algorithms.}
           \resumeItemListEnd
 \vspace{-2pt}
 \end{document}
